@@ -20,7 +20,7 @@ export function buildMetadata({
   const pageTitle = title ? `${title} | ${siteName}` : `${siteName} — ${siteTagline}`;
   const pageDescription = description ?? defaultDescription;
   const url = `${siteUrl}${path}`;
-  const finalOgImage = ogImage ?? `${siteUrl}/images/og-image.png`;
+  const finalOgImage = ogImage ?? `${siteUrl}/images/og-image.jpg`;
 
   return {
     title: pageTitle,
