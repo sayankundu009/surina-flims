@@ -1,0 +1,256 @@
+import type { Title } from "./types";
+
+/**
+ * Hand-maintained content catalog. To add new content, append a new object
+ * to this array — every page on the site derives from this single file via
+ * the helpers in derive.ts.
+ */
+export const titles: Title[] = [
+  {
+    slug: "charitraheen-part-1-goppo-mirer-thek",
+    type: "movie",
+    title: "Charitraheen - Part 1",
+    originalTitle: "চরিত্রহীন - প্রথম পর্ব",
+    youtubeId: "FSJ2-8F3LAE",
+    genres: ["Drama", "Romance"],
+    year: 2026,
+    runtimeMinutes: 207,
+    certificate: "UA 16+",
+    director: "Mir Afsar Ali",
+    cast: [
+      { name: "Mir Afsar Ali", role: "Narrator" },
+      { name: "Sudipta" },
+      { name: "Anujoy" }
+    ],
+    synopsis: "The first part of Sarat Chandra Chattopadhyay's classic masterpiece, exploring complex human relationships and societal norms that challenge the definition of morality.",
+    tagline: "সমাজের চোখে নিয়ম ভাঙা এক অন্যায় চিরদিন...",
+    rating: 4.8,
+    posterSrc: "https://i.ytimg.com/vi/FSJ2-8F3LAE/maxresdefault.jpg",
+    posterAlt: "Official artwork for Charitraheen Part 1 on Goppo Mirer Thek",
+    featured: true,
+    newRelease: true
+  },
+  {
+    slug: "charitraheen-final-part-goppo-mirer-thek",
+    type: "movie",
+    title: "Charitraheen - 2nd & Final Part",
+    originalTitle: "চরিত্রহীন - দ্বিতীয় ও অন্তিম পর্ব",
+    youtubeId: "rb_7BH-ZiII",
+    genres: ["Drama", "Romance"],
+    year: 2026,
+    runtimeMinutes: 208,
+    certificate: "UA 16+",
+    director: "Mir Afsar Ali",
+    cast: [
+      { name: "Mir Afsar Ali", role: "Narrator" },
+      { name: "Sudipta" }
+    ],
+    synopsis: "The dramatic conclusion to Sarat Chandra Chattopadhyay's legendary tale. When everyday paths turn into deep emotional illusions, the true depth of human devotion is put to the test.",
+    tagline: "ভালোবাসা যদি তৃষ্ণা হয়, তবে চরিত্রহীনতার দহনই তার অমোঘ পরিণতি।",
+    rating: 4.9,
+    posterSrc: "https://i.ytimg.com/vi/rb_7BH-ZiII/maxresdefault.jpg",
+    posterAlt: "Official artwork for Charitraheen Final Part on Goppo Mirer Thek",
+    featured: true,
+    newRelease: true
+  },
+  {
+    slug: "kuashar-phool-part-1",
+    type: "movie",
+    title: "Kuashar Phool - Part 1",
+    originalTitle: "কুয়াশার ফুল - প্রথম পর্ব",
+    youtubeId: "zu1nuqDiNY8",
+    genres: ["Drama", "Thriller"],
+    year: 2026,
+    runtimeMinutes: 214,
+    certificate: "UA 13+",
+    director: "Mir Afsar Ali",
+    cast: [
+      { name: "Mir Afsar Ali", role: "Narrator" },
+      { name: "Deep" },
+      { name: "Anujoy" },
+      { name: "Godhuli" },
+      { name: "Papiya" }
+    ],
+    synopsis: "A gripping narrative based on Sayak Aman's story where secrets unravel through a heavy fog of mystery, driving characters into unchartered psychological territories.",
+    tagline: "কুয়াশার আড়ালে লুকিয়ে থাকা এক সত্য।",
+    rating: 4.7,
+    posterSrc: "https://i.ytimg.com/vi/zu1nuqDiNY8/maxresdefault.jpg",
+    posterAlt: "Kuashar Phool Part 1 cover poster art",
+    featured: false,
+    newRelease: false
+  },
+  {
+    slug: "kuashar-phool-final-part",
+    type: "movie",
+    title: "Kuashar Phool - 2nd & Final Part",
+    originalTitle: "কুয়াশার ফুল - দ্বিতীয় ও অন্তিম পর্ব",
+    youtubeId: "vuhvvWhIbTs",
+    genres: ["Drama", "Thriller"],
+    year: 2026,
+    runtimeMinutes: 224,
+    certificate: "UA 13+",
+    director: "Mir Afsar Ali",
+    cast: [
+      { name: "Mir Afsar Ali", role: "Narrator" },
+      { name: "Deep" },
+      { name: "Anujoy" },
+      { name: "Godhuli" }
+    ],
+    synopsis: "The highly anticipated conclusion to Sayak Aman's mystery thriller. The fog lifts, revealing unexpected destinies and truths that change everything for the characters involved.",
+    tagline: "সব কুয়াশা কেটে গিয়ে এবার কি আলোর দেখা মিলবে?",
+    rating: 4.8,
+    posterSrc: "https://i.ytimg.com/vi/vuhvvWhIbTs/maxresdefault.jpg",
+    posterAlt: "Kuashar Phool Final Part cover poster art",
+    featured: false,
+    newRelease: true
+  },
+  {
+    slug: "saytaner-santan",
+    type: "movie",
+    title: "Saytaner Santan",
+    originalTitle: "শয়তানের সন্তান",
+    youtubeId: "0FSFCoqQMc0",
+    genres: ["Thriller", "Horror"],
+    year: 2026,
+    runtimeMinutes: 198,
+    certificate: "A",
+    director: "Mir Afsar Ali",
+    cast: [
+      { name: "Mir Afsar Ali", role: "Narrator" },
+      { name: "Deep Kaizar" },
+      { name: "Sankari" },
+      { name: "Papiya" }
+    ],
+    synopsis: "Written by Saikat Mukhopadhyay, this dark psychological thriller delves deep into ancient evils, familial curses, and a terrifying descent into madness.",
+    tagline: "অন্ধকারের বুক চিরে আসছে সে...",
+    rating: 4.6,
+    posterSrc: "https://i.ytimg.com/vi/0FSFCoqQMc0/maxresdefault.jpg",
+    posterAlt: "Saytaner Santan horror thriller poster",
+    featured: true,
+    newRelease: true
+  },
+  {
+    slug: "khonra-bhairabir-math",
+    type: "movie",
+    title: "Khonra Bhairabir Math",
+    originalTitle: "খোঁড়া ভৈরবীর মাঠ",
+    youtubeId: "dH4WYg4VQcc",
+    genres: ["Horror", "Thriller"],
+    year: 2026,
+    runtimeMinutes: 87,
+    certificate: "UA 16+",
+    director: "Mir Afsar Ali",
+    cast: [
+      { name: "Mir Afsar Ali", role: "Narrator" },
+      { name: "Buddhadev" },
+      { name: "Rounak" },
+      { name: "Papiya" }
+    ],
+    synopsis: "Avik Sarkar's chilling folktale adaptation bringing out the eerie essence of rural horror, cursed fields, and spirits demanding long-lost justice.",
+    tagline: "ভয় এবার এক নতুন ঠিকানায় হানাবে...",
+    rating: 4.9,
+    posterSrc: "https://i.ytimg.com/vi/dH4WYg4VQcc/maxresdefault.jpg",
+    posterAlt: "Eerie field under twilight for Khonra Bhairabir Math",
+    featured: false,
+    newRelease: false
+  },
+  {
+    slug: "kuhak-gmt-originals",
+    type: "movie",
+    title: "Kuhak",
+    originalTitle: "কুহক",
+    youtubeId: "fpROc5fqrmU",
+    genres: ["Thriller", "Drama"],
+    year: 2026,
+    runtimeMinutes: 87,
+    certificate: "UA 13+",
+    director: "Mir Afsar Ali",
+    cast: [
+      { name: "Mir Afsar Ali", role: "Narrator" },
+      { name: "Godhuli" },
+      { name: "Papiya" },
+      { name: "Buddhadev" }
+    ],
+    synopsis: "An intriguing original mystery piece penned by Kaushik Majumdar that weaves visual suspense around illusions, missing identities, and shadows that seem to mock reality.",
+    tagline: "যা দেখছ তা সত্যি তো?",
+    rating: 4.5,
+    posterSrc: "https://i.ytimg.com/vi/fpROc5fqrmU/maxresdefault.jpg",
+    posterAlt: "Abstract illusion-themed movie poster for Kuhak",
+    featured: false,
+    newRelease: false
+  },
+  {
+    slug: "rudradeb-taranath",
+    type: "movie",
+    title: "Rudradeb Taranath",
+    originalTitle: "রুদ্রদেব তারানাথ",
+    youtubeId: "F5hJpi3jO_Y",
+    genres: ["Horror", "Thriller"],
+    year: 2026,
+    runtimeMinutes: 158,
+    certificate: "UA 13+",
+    director: "Mir Afsar Ali",
+    cast: [
+      { name: "Mir Afsar Ali", role: "Taranath Tantrik" },
+      { name: "Anujoy" },
+      { name: "Rounak" },
+      { name: "Deep Basu" }
+    ],
+    synopsis: "Tathagata Banerjee builds upon the legendary lore of Taranath Tantrik. This feature captures Taranath battling malicious cosmic dark forces using his ancient mystic powers.",
+    tagline: "তান্ত্রিকের অলৌকিক রহস্যের হাতছানি।",
+    rating: 4.9,
+    posterSrc: "https://i.ytimg.com/vi/F5hJpi3jO_Y/maxresdefault.jpg",
+    posterAlt: "Mystic smoke and ritual tools featuring Rudradeb Taranath",
+    featured: true,
+    newRelease: true
+  },
+  {
+    slug: "taranather-bramhastra",
+    type: "movie",
+    title: "Taranather Bramhastra",
+    originalTitle: "তারানাথের ব্রহ্মাস্ত্র",
+    youtubeId: "mad5Uf4dels",
+    genres: ["Horror", "Action"],
+    year: 2025,
+    runtimeMinutes: 116,
+    certificate: "UA 16+",
+    director: "Mir Afsar Ali",
+    cast: [
+      { name: "Mir Afsar Ali", role: "Taranath Tantrik" },
+      { name: "Anujoy" },
+      { name: "Rounak" },
+      { name: "Loknath" }
+    ],
+    synopsis: "A cinematic presentation of a dark supernatural duel where Taranath Tantrik is forced to unleash his most definitive, dangerous weapon—the Bramhastra.",
+    tagline: "যখন শেষ অস্ত্রই একমাত্র বাঁচার পথ।",
+    rating: 4.8,
+    posterSrc: "https://i.ytimg.com/vi/mad5Uf4dels/maxresdefault.jpg",
+    posterAlt: "Taranath holding an occult artifact in Taranather Bramhastra",
+    featured: false,
+    newRelease: false
+  },
+  {
+    slug: "haradhaner-doshti-chhele",
+    type: "movie",
+    title: "Haradhaner Doshti Chhele",
+    originalTitle: "হরাদনের দশটি ছেলে",
+    youtubeId: "z4S3fVtyCFc",
+    genres: ["Thriller", "Comedy"],
+    year: 2025,
+    runtimeMinutes: 162,
+    certificate: "UA 13+",
+    director: "Mir Afsar Ali",
+    cast: [
+      { name: "Mir Afsar Ali" },
+      { name: "Sudipta" },
+      { name: "Anujoy" }
+    ],
+    synopsis: "Suparna Chatterjee delivers a brilliantly stylized suspense adaptation inspired by classic counting-rhyme elimination mysteries, packed with tight tension and pitch-black humor.",
+    tagline: "একে একে নিভিছে দেউটি...",
+    rating: 4.7,
+    posterSrc: "https://i.ytimg.com/vi/z4S3fVtyCFc/maxresdefault.jpg",
+    posterAlt: "Mysterious silhouettes for Haradhaner Doshti Chhele",
+    featured: false,
+    newRelease: true
+  }
+];

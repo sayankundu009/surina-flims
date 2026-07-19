@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+
+  /* brand palette — named tokens (source of truth) */
+  --ink: #0b0a0e;
+  --ink-raised: #17151b;
+  --ink-line: #2a2730;
+  --marquee-red: #d6293a;
+  --marquee-red-deep: #7a1620;
+  --reel-gold: #d8a94e;
+  --reel-gold-dim: #8c6e32;
+  --paper: #f1ead9;
+
+  /* legacy aliases — keep every existing component working unchanged */
+  --color-bg: var(--ink);
+  --color-surface: var(--ink-raised);
+  --color-surface-raised: #201d26;
+  --color-border: var(--ink-line);
+  --color-red: var(--marquee-red);
+  --color-red-dim: var(--marquee-red-deep);
+  --color-gold: var(--reel-gold);
+  --color-text: #ededed;
+  --color-text-muted: #9a9aa2;
+
+  accent-color: var(--reel-gold);
+  scrollbar-color: var(--ink-raised) var(--ink);
+  scrollbar-width: thin;
+}
+
+@theme inline {
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-text);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-border: var(--color-border);
+  --color-brand-red: var(--color-red);
+  --color-brand-red-dim: var(--color-red-dim);
+  --color-brand-gold: var(--color-gold);
+  --color-text-muted: var(--color-text-muted);
+  --font-sans: var(--font-public-sans);
+  --font-mono: var(--font-plex-mono);
+  --font-display: var(--font-fraunces);
+  --font-bengali: var(--font-tiro-bangla);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Utility for below-the-fold rails/grids: skip layout/paint work until near viewport. */
+.defer-offscreen {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 420px;
+}
+
+/* Hide the scrollbar visually on horizontal rails while keeping them scrollable
+   (touch/trackpad/keyboard still work; snap points are still native). */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Signature seam: sprocket-hole rule referencing 35mm film edge perforations.
+   Used sparingly — under the hero, above the footer — never as decoration elsewhere. */
+.filmstrip-seam {
+  height: 12px;
+  background-color: var(--reel-gold-dim);
+  background-image: radial-gradient(
+    circle at center,
+    var(--ink) 3px,
+    transparent 3.2px
+  );
+  background-size: 18px 12px;
+  background-position: 9px center;
+  background-repeat: repeat-x;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Shimmer loading skeleton effect */
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-surface) 25%,
+    var(--color-surface-raised) 37%,
+    var(--color-surface) 63%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 2.2s infinite linear;
+}
