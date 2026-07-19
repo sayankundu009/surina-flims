@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const siteName = "Surina Films OTT";
 export const siteTagline = "Watch. Feel. Inspire.";
-export const siteUrl = "https://www.surinafilms.example";
+export const siteUrl = "https://surina-flims.vercel.app";
 export const defaultDescription =
   "Surina Films OTT is the home of Surina Monish Film Productions — stream original movies, short films and trailers.";
 
